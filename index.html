@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agende sua mentoria</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>MENTORIA</h1>
+    <p>Preencha o formulário abaixo para<br>agendar a sua mentoria</p>
+  </header>
+
+  <main>
+    <form action="" id="cadastro">
+      <fieldset>
+        <legend>INFORMAÇÕES PESSOAIS</legend>
+
+        <div class="inputs name">
+          <div>
+            <label for="inputName">Nome</label>
+            <input type="text" id="inputName" required>
+          </div>
+
+          <div>
+            <label for="inputSurname">Sobrenome</label>
+            <input type="text" id="inputSurname" required>
+          </div>
+        </div>
+
+        <div class="inputs">
+          <label for="inputEmail">Email <span>(Digite um email válido)</span></label>
+          <input type="email" id="inputEmail" required>
+        </div>
+
+        <div class="inputs">
+          <label for="inputPassword">Senha <span>(Mínimo de 6 caracteres)</span></label>
+          <input type="password" id="inputPassword" required minlength="6">
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>INFORMAÇÕES DO MENTOR</legend>
+
+        <div class="inputs">
+          <label for="inputMentor">Nome do seu mentor <span>(Só o primeiro nome)</span></label>
+          <input type="text" id="inputMentor" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>SEUS HORÁRIOS DISPONÍVEIS</legend>
+
+        <div class="first">
+          <h3>Primeira Mentoria</h3>
+
+          <div class="inputs">
+            <div>
+              <label for="inputDate">Data <span>(DD/MM/AAAA)</span></label>
+              <input type="date" id="inputDate" required>
+            </div>
+
+            <div class="time">
+              <div>
+                <label for="inputOf">Das</label>
+                <input type="time" id="inputOf" required>
+              </div>
+  
+              <div>
+                <label for="inputUntil">até</label>
+                <input type="time" id="inputUntil" required>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="second">
+          <h3>Segunda Mentoria</h3>
+
+          <div class="inputs">
+            <div>
+              <label for="inputDate2">Data <span>(DD/MM/AAAA)</span></label>
+              <input type="date" id="inputDate2" required>
+            </div>
+
+            <div class="time">
+              <div>
+                <label for="inputOf2">Das</label>
+                <input type="time" id="inputOf2" required>
+              </div>
+  
+              <div>
+                <label for="inputUntil2">até</label>
+                <input type="time" id="inputUntil2" required>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </fieldset>
+      </form>
+  </main>
+
+  <footer>
+    <input id="submit" type="submit" value="Salvar" form="cadastro">
+  </footer>
+</body>
+</html>
